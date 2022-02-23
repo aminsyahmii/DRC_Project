@@ -1,6 +1,7 @@
 import React from "react";
 // import { Navbar, Container, Nav } from "react-bootstrap";
 import "./Profile.css";
+import EditIcon from "@mui/icons-material/Edit";
 import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
 
