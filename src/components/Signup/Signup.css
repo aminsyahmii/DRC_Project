@@ -58,10 +58,11 @@ label.signup-input-title {
   text-align: left;
   font-size: 20px;
   margin: 20px 0 10px 0;
-  display: block;
+  /* display: block; */
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  flex-direction: row;
+  /* align-items: left; */
+  justify-content: space-between;
 }
 
 .signup-input {
@@ -106,6 +107,12 @@ form {
   align-items: left;
   /* align-content: flex-start; */
 }
+.error-message {
+  color: red;
+  font-size: 11px;
+  display: flex;
+  align-items: flex-end;
+}
 
 /* Responsive Design */
 /* Laptops & Small Screens ----------- */
@@ -148,8 +155,9 @@ form {
     font-size: 20px;
     display: block;
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    flex-direction: row;
+    /* align-items: left; */
+    justify-content: space-between;
   }
 
   .signup-input {

@@ -50,11 +50,8 @@
 }
 
 .div1 {
-  display: grid;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  justify-items: center;
+  margin: 0 auto;
+  width: 100%;
 }
 .headers {
   font-family: sans-serif;
@@ -64,7 +61,7 @@
   line-height: 24px;
   display: flex;
   align-items: center;
-  text-align: right;
+  justify-content: space-between;
   color: black;
 }
 
