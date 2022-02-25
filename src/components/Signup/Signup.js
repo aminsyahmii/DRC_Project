@@ -5,7 +5,10 @@ import Footer from "./../Footer/Footer";
 import Menubar from "../Menubar/Menubar";
 import { useForm } from "react-hook-form";
 
-function Signup() {
+
+const Signup = () => {
+  const [theme, setTheme] = React.useState("dark");
+
   const {
     register,
     handleSubmit,
@@ -18,7 +21,7 @@ function Signup() {
 
   return (
     <div className="signup-container">
-      <Menubar />
+      <Menubar theme={theme} setTheme={setTheme} />
       <div className="signbox">
         <div className="signup-main-title">Create Hikers Account</div>
         <div className="signup-sub-title">
@@ -133,7 +136,7 @@ function Signup() {
           </form>
         </div>
 
-        <div>
+        <div id="reg">
           Already registered?{" "}
           <Link to="/login">
             <span className="links">Log In</span>
@@ -143,6 +146,6 @@ function Signup() {
       <Footer />
     </div>
   );
-}
-// }
+};
+
 export default Signup;

@@ -4,8 +4,11 @@ import Menubar from "./../Menubar/Menubar";
 import Footer from "./../Footer/Footer";
 import { useForm } from "react-hook-form";
 import "./Login.css";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
+  const [theme, setTheme] = React.useState("dark");
+
   const {
     register,
     handleSubmit,
@@ -18,7 +21,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      <Menubar />
+      <Menubar theme={theme} setTheme={setTheme} />
       <div className="login-container">
         <div className="inner-container">
           <div className="login-main-title">Hikers Account Login</div>
