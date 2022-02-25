@@ -1,5 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
 
+.Amountbox {
+  display: "block";
+  direction: "column";
+  align-items: "center";
+  justify-content: "center";
+}
+
+.Walletbox {
+  background-image: url("../../assets/DashboardAsset/Wave\ \(Dark\).svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Deposit {
+  background-color: white;
+  position: "absolute";
+  width: 1200;
+  border: "2px solid #000";
+  box-shadow: 24;
+  padding: 4;
+  overflow: "auto";
+}
+
+.Withdrawal {
+  background-color: aqua;
+  position: "absolute";
+  transform: "translate(-50%, -50%)";
+  height: 200;
+  width: 1200;
+  border: "2px solid #000";
+  box-shadow: 24;
+  padding: 4;
+  overflow: "auto";
+}
+
+.Transfer {
+  background-color: blueviolet;
+  position: "absolute";
+  transform: "translate(-50%, -50%)";
+  height: 200;
+  width: 1200;
+  border: "2px solid #000";
+  box-shadow: 24;
+  padding: 4;
+  overflow: "auto";
+}
+
 .DashBG {
   background-color: #1f1f1f;
   background-image: url("../../assets/DashboardAsset/Wave\ \(Dark\).svg");
@@ -10,6 +58,7 @@
 
 .Layout {
   color: white;
+
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(11, 1fr);
@@ -40,18 +89,18 @@
   padding: 5px 0 0 25px;
 }
 
-.IconText {
+.dash-icon-text {
   padding: 5px;
 }
 
-.IconsHead {
+.dash-icon-head {
   font-size: 20px;
   display: flex;
   justify-content: flex-end;
   padding: 10px 20px 0 0;
 }
 
-.IconPads {
+.dash-icon-pads {
   padding: 0 10px;
 }
 
@@ -76,19 +125,14 @@
 }
 
 .b-title {
-  /* background-color: green; */
   font-size: 14px;
-  height: 20px;
   margin: 0;
-  padding: 10px 0 5px 0;
+  padding: 10px 0 10px 0;
 }
 
-.wrap {
-  object-fit: cover;
+/* .wrap {
   width: 100%;
-  /* height: 70%; */
-  /* background-color: red; */
-}
+} */
 
 .Profile {
   grid-column: 6/8;
