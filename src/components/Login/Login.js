@@ -4,7 +4,6 @@ import Menubar from "./../Menubar/Menubar";
 import Footer from "./../Footer/Footer";
 import { useForm } from "react-hook-form";
 import "./Login.css";
-import { useForm } from "react-hook-form";
 
 const Login = () => {
   const [theme, setTheme] = React.useState("dark");
