@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "./../Footer/Footer";
 import Menubar from "../Menubar/Menubar";
 import { useForm } from "react-hook-form";
-import React from "react";
+import Reactgit from "react";
 
 const Signup = () => {
   const [theme, setTheme] = React.useState("dark");
